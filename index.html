@@ -1,154 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Aklesh Chouriya — Business Development Manager at BloomX Business Solutions. Helping brands grow through digital marketing, lead generation, and client relationship management."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://[GITHUB_USERNAME].github.io/" />
 
-:root {
-  --bg: #0a0f1c;
-  --card: rgba(255,255,255,0.06);
-  --text: #ffffff;
-  --muted: rgba(255,255,255,0.7);
-  --accent: #38bdf8;
-}
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aklesh Chouriya — Business Development Manager" />
+  <meta property="og:description" content="Helping brands grow with digital marketing & lead generation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="[HEADSHOT_IMAGE]" />
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
+  <title>Aklesh Chouriya — Business Development Manager | BloomX Business Solutions</title>
 
-/* NAVBAR */
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  backdrop-filter: blur(12px);
-  background: rgba(10,15,28,0.6);
-  padding: 15px 30px;
-  z-index: 1000;
-}
+  <link rel="stylesheet" href="style.css"/>
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aklesh Chouriya",
+    "jobTitle": "Business Development Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "BloomX Business Solutions"
+    },
+    "description": "Business Development Manager helping brands grow through digital marketing, lead generation, and client relationship management.",
+    "image": "[HEADSHOT_IMAGE]",
+    "url": "https://[GITHUB_USERNAME].github.io/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Madhya Pradesh",
+      "addressCountry": "India"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/aklesh-chouriya-76366a120/"
+      // Add more profiles later
+    ]
+  }
+  </script>
+</head>
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
+<body>
+<header class="navbar">
+  <div class="logo">Aklesh Chouriya</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#experience">Experience</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="toggleTheme">🌙</button>
+</header>
 
-nav a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-}
+<section class="hero">
+  <img src="[HEADSHOT_IMAGE]" alt="Aklesh Chouriya" class="hero-img"/>
+  <h1>Aklesh Chouriya</h1>
+  <p>Business Development Manager helping brands grow with digital marketing & lead generation</p>
 
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
+  <div class="hero-actions">
+    <a href="#contact" class="btn">Get in touch</a>
+    <a href="https://www.linkedin.com/in/aklesh-chouriya-76366a120/" target="_blank" class="btn secondary">Connect on LinkedIn</a>
+  </div>
+</section>
 
-.hero h1 {
-  font-size: 3rem;
-  background: linear-gradient(90deg, #38bdf8, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a Business Development Manager at BloomX Business Solutions, where I help brands grow through strategic digital marketing, lead generation, and strong client relationships.</p>
+  <p>With over 10+ years of experience across business development and customer experience, I have worked in organizations like Hexaware Technologies, StarTek, Aegis, Cogent E-Services, and Teleperformance.</p>
+  <p>My focus is on building long-term partnerships, improving conversion pipelines, and helping businesses scale through performance-driven digital strategies.</p>
+</section>
 
-.hero p {
-  margin-top: 10px;
-  color: var(--muted);
-  max-width: 600px;
-}
+<section id="expertise">
+  <h2>Expertise</h2>
+  <div class="grid">
+    <div class="card">Business Development</div>
+    <div class="card">Digital Lead Generation</div>
+    <div class="card">Client Relationship Management</div>
+    <div class="card">Digital Marketing Strategy</div>
+    <div class="card">E-commerce Growth</div>
+  </div>
+</section>
 
-.hero-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 2px solid var(--accent);
-}
+<section id="experience">
+  <h2>Experience</h2>
+  <ul class="timeline">
+    <li><strong>BloomX Business Solutions</strong> — Business Development Manager (Current)</li>
+    <li><strong>Hexaware Technologies</strong> — Project Leader</li>
+    <li><strong>StarTek / Aegis / Cogent / Teleperformance</strong> — Customer Experience & Operations Roles</li>
+  </ul>
+</section>
 
-/* BUTTONS */
-.btn {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 12px 20px;
-  border-radius: 10px;
-  background: var(--accent);
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
-}
+<section id="faq">
+  <h2>FAQ</h2>
+  <div class="faq">
+    <details>
+      <summary>Who is Aklesh Chouriya?</summary>
+      <p>Aklesh Chouriya is a Business Development Manager specializing in digital marketing, lead generation, and client growth strategies.</p>
+    </details>
 
-.btn.outline {
-  background: transparent;
-  border: 1px solid var(--accent);
-  color: var(--text);
-}
+    <details>
+      <summary>What does he do?</summary>
+      <p>He helps businesses generate qualified leads, improve marketing performance, and build long-term customer relationships.</p>
+    </details>
 
-/* SECTIONS */
-section {
-  padding: 100px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
+    <details>
+      <summary>How can I work with him?</summary>
+      <p>You can reach out via the contact form below or connect directly on LinkedIn.</p>
+    </details>
+  </div>
+</section>
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+<section id="contact">
+  <h2>Contact</h2>
 
-/* CARDS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
+  <form action="https://formspree.io/f/[FORMSPREE_FORM_ID]" method="POST" id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required/>
+    <input type="email" name="email" placeholder="Your Email" required/>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="formStatus"></p>
+  </form>
 
-.card {
-  background: var(--card);
-  padding: 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
+  <a href="https://www.linkedin.com/in/aklesh-chouriya-76366a120/" target="_blank">Connect on LinkedIn</a>
+</section>
 
-.card:hover {
-  transform: translateY(-5px);
-}
+<footer>
+  <p>Aklesh Chouriya | Business Development Manager | Madhya Pradesh, India</p>
+  <p>© 2026 All rights reserved</p>
+</footer>
 
-/* CONTACT */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
-button {
-  background: var(--accent);
-  padding: 12px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
+<script src="script.js"></script>
+</body>
+</html>
